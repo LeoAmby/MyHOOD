@@ -31,7 +31,6 @@
     * Users on visiting the site are in a position to see the purpose of the web app on the landing page. 
     * Users can view various posts and news that have been posted.
     * A user has the chance to register and after authentication, they can post.
-    
 
 ** TECHNOLOGIES USED
 
