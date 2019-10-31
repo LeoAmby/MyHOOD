@@ -43,5 +43,5 @@ class Profile(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length = 50)
-    detail = models.TextField(max_lenth = 50)
+    detail = models.TextField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)

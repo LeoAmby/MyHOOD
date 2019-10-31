@@ -1,13 +1,14 @@
 from django.shortcuts import render
+from .models import Post, Business, Neighborhood
 
 # Create your views here.
 
 def index(request):
-    news = .objects.all()
-    context = {
-        'projects': projects
-    }
-    return render(request, 'index.html', context)
+    # post = post.objects.all()
+    # context = {
+    #     'post': post
+    # }
+    return render(request, 'index.html')
     
 
 def profile(request):
