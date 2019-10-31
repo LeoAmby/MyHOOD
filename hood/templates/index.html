@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%block content%}
+{{block.super}}
+
+<div class="container">
+<div class="row">
+        {%for business in businesses %}
+    <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{project.user.profile.image}}">
+        <div class="media-body">
+            <div class="article-metadata">
+                <img src="{{project.photo.url}}" width="500px" height="300px">
+                <a class="mr-2" href="#">{{business.user}}</a>
+            </div>
+            <a class="article-title" href="{%url 'project-detail' project.id%}">{{project.link}}</a>
+            <p class="article-content">{{business.description}}</p>
+        </div>
+    </article>
+    {%endfor%}
+
+</div>
+</div>
+
+
+{%endblock%}
+
+
