@@ -2,7 +2,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.contrib.auth.models import User
-from hood.models import 
+from hood.models import Business, Profile, Neighborhood, User, Profile
 
 
 
@@ -29,7 +29,7 @@ class ProfileUpdateForm(forms.ModelForm):
         fields = ['image']
     
 
-class ProjectForm(forms.ModelForm):
-    model = Project
+class BusinessForm(forms.ModelForm):
+    model = Business
     fields = ['title', 'photo', 'description', 'link']
 
