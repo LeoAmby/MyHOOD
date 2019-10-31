@@ -31,5 +31,5 @@ class ProfileUpdateForm(forms.ModelForm):
 
 class BusinessForm(forms.ModelForm):
     model = Business
-    fields = ['title', 'photo', 'description', 'link']
+    fields = ['name', 'user', 'neighborhood']
 
