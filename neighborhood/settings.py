@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'bootstrap4'
+    'bootstrap4',
     'hood.apps.HoodConfig',
     'register.apps.RegisterConfig',
     'crispy_forms',
