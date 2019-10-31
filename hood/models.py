@@ -6,21 +6,29 @@ from django.urls import reverse
 
 
 class Neighborhood(models.Model):
-    name = models.CharField()
-    location = models.CharField()
+    name = models.CharField(max_length = 50)
+    location = models.CharField(max_length = 50)
     occupants = models.IntegerField()
 
+    def __str__(self):
+        return self.name
+
 class User(models.Model):
-    name = models.CharField()
+    username = models.CharField(max_length = 50)
     identity = models.IntegerField()
     neighborhood = models.ForeignKey(Neighborhood, on_delete=models.CASCADE)
     email = models.EmailField()
 
+    def __str__(self):
+        return self.name
+
 class Business(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length = 50)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     neighborhood = models.ForeignKey(Neighborhood, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.name
 
 class Profile(models.Model):
     user = models.OneToOneField(User, default='', on_delete=models.CASCADE)
