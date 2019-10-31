@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'bootstrap4'
     'hood.apps.HoodConfig',
+    'register.apps.RegisterConfig',
     'crispy_forms',
     'rest_framework',
     'django.contrib.admin',
