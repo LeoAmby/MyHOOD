@@ -1,13 +1,14 @@
 # MyHOOD
 
-** AUTHOR
-    Leonidah Mwamto
+## AUTHOR
 
-** DESCRIPTION
+   Leonidah Mwamto
+
+## DESCRIPTION
 
     A django web app for a neighbohood showcasing various elements like news and posts made by the users of the app
 
-** SETUP & INSTALLATION
+## SETUP & INSTALLATION
 
     To use this application:
     * Clone it from Github under https://github.com/LeoAmby/MyHOOD.git
@@ -26,13 +27,13 @@
         *Create a django App.the project is already created for you.
             django-admin startapp <nameOfYourApp>
 
-** USER STORIES
+## USER STORIES
 
     * Users on visiting the site are in a position to see the purpose of the web app on the landing page. 
     * Users can view various posts and news that have been posted.
     * A user has the chance to register and after authentication, they can post.
 
-** TECHNOLOGIES USED
+## TECHNOLOGIES USED
 
     * python3.6
     * django==2.4.6
@@ -43,5 +44,5 @@
     * Github for task management
     * Heroku for deployment
 
-** LINCENCE
-    [MIT LICENCE](https://github.com/LeoAmby/MyHOOD/blob/master/LICENSE)
+## LICENSE
+   [MIT LICENSE](https://github.com/LeoAmby/MyHOOD/blob/master/LICENSE)
