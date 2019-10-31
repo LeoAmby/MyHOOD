@@ -1,3 +1,57 @@
-.container {
-    background-image: url"{%static 'images/bg.jpg'%}";
+body {
+    background: url("/static/images/bg.jpg") 50% 0 no-repeat fixed;
+    height: 650px;
+    /* background-repeat: no-repeat; */
+}
+/* background: url("/static/img/sample.jpeg") 50% 0 no-repeat fixed;
+     color: white;
+     height: 650px;
+     padding: 100px 0 0 0;   
+     } */
+
+nav {
+    background-color: rgb(7, 2, 2);
+    height:80px;
+    
+}
+
+nav a{
+    color:grey;
+    padding-right: 8px;
+}
+
+nav a:hover{
+    color:rgb(179, 179, 63);
+    text-decoration: none;
+}
+
+.submit{
+    background-color: yellow;
+    padding:20px;
+    color:black;
+    font-family: 'Turret Road', cursive;
+}
+
+.navbar-body {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    color:rgb(235, 100, 10);
+}
+
+#hint_id_password1 {
+    display:none;
+}
+
+#hint_id_username {
+    display:none;
+}
+#hint_id_password2 {
+    display:none;
+}
+
+textinput.id_username:before {
+    content: "username";
+}
+.asteriskField {
+    display: none;
 }

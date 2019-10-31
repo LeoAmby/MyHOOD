@@ -21,7 +21,7 @@ class UserUpdateForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email']
+        fields = ['email']
 
 
 class ProfileUpdateForm(forms.ModelForm):
@@ -32,5 +32,5 @@ class ProfileUpdateForm(forms.ModelForm):
 
 class BusinessForm(forms.ModelForm):
     model = Business
-    fields = ['username', 'user', 'neighborhood']
+    fields = ['name', 'user', 'neighborhood']
 
