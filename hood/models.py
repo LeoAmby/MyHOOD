@@ -43,6 +43,16 @@ class Business(models.Model):
     def __str__(self):
         return self.name
 
+    def create_business(self):
+        self.save()
+
+    def delete_business(self):
+        self.delete()
+
+    @classmethod
+    def find_business(cls, business_name):
+        return cls.objects.filter(name=business_name)
+
 class Profile(models.Model):
     user = models.OneToOneField(User, default='', on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to = 'images')
