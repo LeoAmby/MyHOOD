@@ -50,8 +50,11 @@ class Business(models.Model):
         self.delete()
 
     @classmethod
-    def find_business(cls, business_name):
-        return cls.objects.filter(name=business_name)
+    def search_by_name(cls, search_term):
+        business = cls.objects.filter(name__icontains=search_term)
+
+        return business
+
 
 class Profile(models.Model):
     user = models.OneToOneField(User, default='', on_delete=models.CASCADE)
