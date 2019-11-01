@@ -16,6 +16,16 @@ class Neighborhood(models.Model):
     def __str__(self):
         return self.name
 
+    def create_neighborhood(self):
+        self.save()
+
+    def delete_neighborhood(self):
+        self.delete()
+
+    @classmethod
+    def find_neighborhood(cls, neighborhood_id):
+        return cls.objects.filter(id=neighborhood_id)
+
 # class User(models.Model):
 #     username = models.CharField(max_length = 50)
 #     identity = models.IntegerField()
